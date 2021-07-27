@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Bookshelf Apps
+        </h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="container bg-white shadow input_section">
+            <h2 class="container-header text-center">Tambah Buku Bacaan</h2>
+            <form class="inputBook" action="#" id="inputBook">
+            <div class="form-group form-title">
+                <label for="inputBookTitle">Judul</label>
+                <input id="inputBookTitle" type="text"  required>
+            </div>
+            <div class="form-group form-title">
+                <label for="inputBookAuthor">Penulis</label>
+                <input id="inputBookAuthor" type="text"  required>
+            </div>
+            <div class="form-group form-title">
+                <label for="inputBookYear">Tahun</label>
+                <input id="inputBookYear" type="number"  required>
+            </div>
+            <div class="form-group form-title">
+                <label for="inputBookDate">Tanggal</label>
+                <input id="inputBookDate" type="date"  required>
+            </div>
+            <div class="button-group">
+                <input type="reset" value="Reset" name="Reset" class="btn-submit">
+                <input type="submit" value="Submit" name="Submit" class="btn-submit">
+            </div>
+        </form>
+    </div>
+
+    <div class="search_section container">
+        <h2 class="container-header">Cari Buku (Opsional)</h2>
+        <form id="searchBook">
+            <label for="searchBookTitle">Judul</label>
+            <input id="searchBookTitle" type="text">
+            <br>
+            <label for="searchBookYear">Tahun</label>
+            <input id="searchBookYear" type="number">
+            <button id="searchSubmit" type="submit">Cari</button>
+        </form>
+        </div>
+
+        <div class="container">
+            <h2 class="container-header">Belum Selesai Dibaca</h2>
+            <div id="incompleteBookshelfList" class="book_list">
+                
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="container-header">Sudah Selesai Dibaca</h2>
+            <div id="completeBookshelfList" class="book_list">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="js/data.js" type="text/javascript"></script>
+    <script src="js/dom.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
